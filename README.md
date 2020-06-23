@@ -2,7 +2,7 @@
 ### This Repository Contains code for COVID19Tracker.
 ## Screen Shots of the Resulting App
 ### GIF
-![Demo of Quiz App](https://media.giphy.com/media/S8g8B85PfmPbOpeWOY/giphy.gif)
+![Demo of Quiz App](ezgif.com-optimize.gif)
 ### Yotube LINK
 https://youtu.be/L058oKudZd0
 ### Screenshot 1
