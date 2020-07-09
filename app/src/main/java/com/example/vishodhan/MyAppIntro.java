@@ -20,17 +20,17 @@ public class MyAppIntro extends AppIntro {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_my_app_intro);
-        addSlide(AppIntroFragment.newInstance("Welcome to Now-or-Never","Our Aim is not just to win(getting placed in tech giants) bot TO WIN RIGHT,with commitment and TeamWork",R.drawable.first, ContextCompat.getColor(getApplicationContext(),R.color.firstColor)));
-        addSlide(AppIntroFragment.newInstance("OUR ONLY ASKS (HONESTY)","1.Be always HONEST-To every team member and primarily to Yourself",R.drawable.second, ContextCompat.getColor(getApplicationContext(),R.color.secondColor)));
-        addSlide(AppIntroFragment.newInstance("OUR ONLY ASKS (HUMBLENESS)","Be always HUMBLE-No matter what you achieve",R.drawable.third, ContextCompat.getColor(getApplicationContext(),R.color.thirdColor)));
-        addSlide(AppIntroFragment.newInstance("OUR ONLY ASKS (CURIOUSITY)","Be always CURIOUS AND OPEN -To LEARNING and HARDWORKING",R.drawable.fifth, ContextCompat.getColor(getApplicationContext(),R.color.fourthColor)));
+        addSlide(AppIntroFragment.newInstance("Welcome to COVID19Tracker","Our Aim is to provide a reliable data of Spread of CORONA VIRUS in Various Countries. #STAYHOME  #STAYSAFE #BEAWAREOFCOVID #GOCORONAGO" ,R.drawable.first, ContextCompat.getColor(getApplicationContext(),R.color.firstColor)));
+        addSlide(AppIntroFragment.newInstance("(NICE DASHBOARD)","1.We provide nicely looking dashboard for easy understanding of the spread.",R.drawable.second, ContextCompat.getColor(getApplicationContext(),R.color.secondColor)));
+        addSlide(AppIntroFragment.newInstance("(CHATBOT FOR AWARENESS)","We provide a AI Powered Chatbot for spreading awareness. #ASKMEANYTHINGRELATEDTOCORONA",R.drawable.third, ContextCompat.getColor(getApplicationContext(),R.color.thirdColor)));
+        addSlide(AppIntroFragment.newInstance("(NEWS RELATED TO CORONA VIRUS)","News provide you the actual condition of CORONA ",R.drawable.fifth, ContextCompat.getColor(getApplicationContext(),R.color.fourthColor)));
 
 
         sharedPreferences=getApplicationContext().getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
         editor=sharedPreferences.edit();
         if(sharedPreferences!=null){
-            boolean chechShared=sharedPreferences.getBoolean("checkStaed",false);
-            if(chechShared==true){
+            boolean checkShared=sharedPreferences.getBoolean("checkStaed",false);
+            if(checkShared==true){
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
                 finish();
             }
